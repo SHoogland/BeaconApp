@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: BeaconApp.xcworkspace # path to your xcworkspace folder
+xcode_scheme: BeaconApp
