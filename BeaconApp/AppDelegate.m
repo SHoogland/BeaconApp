@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ViewController* demoList = [[ViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    
+    self.mainNavigation = [[UINavigationController alloc] initWithRootViewController:demoList];
+    self.window.rootViewController = self.mainNavigation;
+    
+    [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.490 green:0.631 blue:0.549 alpha:1.000]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                           NSFontAttributeName: [UIFont systemFontOfSize:18]}];
+    UIViewController *demoViewController;
+    demoViewController = [[ViewController alloc] initWithScanType:ESTScanTypeBeacon
+                                                         completion:^(ESTBeacon *beacon) {
+                                                             
+                                                     }];
+    
     return YES;
 }
 

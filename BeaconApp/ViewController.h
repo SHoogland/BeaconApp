@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ESTBeacon.h"
 
-@interface ViewController : UIViewController
+typedef enum : int
+{
+    ESTScanTypeBluetooth,
+    ESTScanTypeBeacon
+    
+} ESTScanType;
 
+/*
+ * Lists all Estimote beacons in range and returns selected beacon.
+ */
+@interface ViewController : UITableViewController
+
+/*
+ * Selected beacon is returned on given completion handler.
+ */
+- (id)initWithScanType:(ESTScanType)scanType completion:(void (^)(ESTBeacon *))completion;
 
 @end
 
