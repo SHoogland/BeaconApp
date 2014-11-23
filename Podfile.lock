@@ -1,10 +1,10 @@
 PODS:
-  - EstimoteSDK (2.1.5)
+  - EstimoteSDK (2.2.1)
 
 DEPENDENCIES:
   - EstimoteSDK
 
 SPEC CHECKSUMS:
-  EstimoteSDK: 1a8184137ab16615b982efd0804aa711a0262ce7
+  EstimoteSDK: 3ae789ad99ce7a830d4679b8e4b663449f90ada3
 
 COCOAPODS: 0.35.0.rc2

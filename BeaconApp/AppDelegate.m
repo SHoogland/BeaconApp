@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BeaconsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UITableViewController *beaconsTableViewController;
+    beaconsTableViewController = [[BeaconsTableViewController alloc] initWithScanType:ESTScanTypeBeacon
+                                                                           completion:^(ESTBeacon *beacon) { }
+                                  ];
+    
     return YES;
 }
 

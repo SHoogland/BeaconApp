@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		664A90EBD95A4C161464E309 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E302E59A829091828BC4D992 /* libPods.a */; };
+		D401F65B1A22349A000E670A /* BeaconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D401F65A1A22349A000E670A /* BeaconsTableViewController.m */; };
+		D401F65E1A2234DE000E670A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D401F65D1A2234DE000E670A /* NavigationController.m */; };
+		D401F6611A223B48000E670A /* BeaconsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D401F6601A223B48000E670A /* BeaconsTableViewCell.m */; };
 		D44233D11A18FC2E00F03AE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D44233D01A18FC2E00F03AE7 /* main.m */; };
 		D44233D41A18FC2E00F03AE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D44233D31A18FC2E00F03AE7 /* AppDelegate.m */; };
-		D44233D71A18FC2E00F03AE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44233D61A18FC2E00F03AE7 /* ViewController.m */; };
 		D44233DA1A18FC2E00F03AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44233D81A18FC2E00F03AE7 /* Main.storyboard */; };
 		D44233DC1A18FC2E00F03AE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44233DB1A18FC2E00F03AE7 /* Images.xcassets */; };
 		D44233DF1A18FC2E00F03AE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44233DD1A18FC2E00F03AE7 /* LaunchScreen.xib */; };
@@ -30,13 +32,17 @@
 /* Begin PBXFileReference section */
 		5B3FB387E8305FFFD4F6B7CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6700C816C1854A1C78249124 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D401F6591A22349A000E670A /* BeaconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsTableViewController.h; sourceTree = "<group>"; };
+		D401F65A1A22349A000E670A /* BeaconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsTableViewController.m; sourceTree = "<group>"; };
+		D401F65C1A2234DE000E670A /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		D401F65D1A2234DE000E670A /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		D401F65F1A223B48000E670A /* BeaconsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsTableViewCell.h; sourceTree = "<group>"; };
+		D401F6601A223B48000E670A /* BeaconsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsTableViewCell.m; sourceTree = "<group>"; };
 		D44233CB1A18FC2E00F03AE7 /* BeaconApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44233CF1A18FC2E00F03AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44233D01A18FC2E00F03AE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D44233D21A18FC2E00F03AE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D44233D31A18FC2E00F03AE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D44233D51A18FC2E00F03AE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D44233D61A18FC2E00F03AE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D44233D91A18FC2E00F03AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D44233DB1A18FC2E00F03AE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D44233DE1A18FC2E00F03AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -107,12 +113,16 @@
 			children = (
 				D44233D21A18FC2E00F03AE7 /* AppDelegate.h */,
 				D44233D31A18FC2E00F03AE7 /* AppDelegate.m */,
-				D44233D51A18FC2E00F03AE7 /* ViewController.h */,
-				D44233D61A18FC2E00F03AE7 /* ViewController.m */,
 				D44233D81A18FC2E00F03AE7 /* Main.storyboard */,
 				D44233DB1A18FC2E00F03AE7 /* Images.xcassets */,
 				D44233DD1A18FC2E00F03AE7 /* LaunchScreen.xib */,
 				D44233CE1A18FC2E00F03AE7 /* Supporting Files */,
+				D401F6591A22349A000E670A /* BeaconsTableViewController.h */,
+				D401F65A1A22349A000E670A /* BeaconsTableViewController.m */,
+				D401F65C1A2234DE000E670A /* NavigationController.h */,
+				D401F65D1A2234DE000E670A /* NavigationController.m */,
+				D401F65F1A223B48000E670A /* BeaconsTableViewCell.h */,
+				D401F6601A223B48000E670A /* BeaconsTableViewCell.m */,
 			);
 			path = BeaconApp;
 			sourceTree = "<group>";
@@ -278,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44233D71A18FC2E00F03AE7 /* ViewController.m in Sources */,
+				D401F6611A223B48000E670A /* BeaconsTableViewCell.m in Sources */,
+				D401F65B1A22349A000E670A /* BeaconsTableViewController.m in Sources */,
+				D401F65E1A2234DE000E670A /* NavigationController.m in Sources */,
 				D44233D41A18FC2E00F03AE7 /* AppDelegate.m in Sources */,
 				D44233D11A18FC2E00F03AE7 /* main.m in Sources */,
 			);
