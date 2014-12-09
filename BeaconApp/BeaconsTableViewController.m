@@ -9,6 +9,7 @@
 #import "BeaconsTableViewController.h"
 #import "BeaconsTableViewCell.h"
 #import "ESTBeaconManager.h"
+#import "BeaconDetailsViewController.h"
 
 @interface BeaconsTableViewController () <ESTBeaconManagerDelegate>
 
@@ -219,6 +220,17 @@
     cell.beaconImage.image = [UIImage imageNamed:@"beacon"];
     
     return cell;
+}
+
+#pragma mark - Prepare For Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqual: @"SegueToDetailsView"]){
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        BeaconDetailsViewController *detailViewController = (BeaconDetailsViewController *)segue.destinationViewController;
+        detailViewController.beacon = [self.beaconsArray objectAtIndex:indexPath.row];
+    }
 }
 
 @end
